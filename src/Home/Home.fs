@@ -2,21 +2,23 @@ module Home
 open Fable.Helpers.React
 open Fable.Helpers.React.Props
 open Fulma
-// April; Maybe 13
+
+
+
 let home dispatch = 
   Hero.hero [] [ 
     Hero.body [] [
-      Columns.columns [Columns.IsCentered ] [ 
-        Column.column [Column.Width (Screen.All , Column.IsOneQuarter)]
-          [Image.image [  ] [img [ Src "sfflogo_large2.png";]]]
-      ]   
+      // Columns.columns [Columns.IsCentered ] [
+      //   Column.column [Column.Width (Screen.All , Column.IsOneQuarter)]
+      //     [Image.image [  ] [img [ Src "capitol-logo.png";]]]
+      // ]   
       Container.container [ Container.Modifiers [ Modifier.TextAlignment (Screen.All, TextAlignment.Centered) ] ] [ 
         Heading.h1 [ ]
-          [ str "April 13th" ]
+          [ str "February 29th" ]
         Heading.h2 [ Heading.IsSubtitle ]
-          [ str "Raleigh, NC" ] 
+          [ str "Washington, DC" ] 
         p[] 
-          [str "Southern Fried F# is a free, full-day conference full of talks"]
+          [str "Capitol F# is a free, full-day conference full of talks"]
         p[] 
           [str "Keep checking here for updates, and check out the site code on github"]
       ]

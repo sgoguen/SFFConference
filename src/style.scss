@@ -1,53 +1,62 @@
 @charset "utf-8";
 
 $white: white;
-$sff_softred: #EF4036;
-$sff_red: #D92027;
-$sff_brown: #7E3227; // eye of the chicken
-$sff_gold: #FCB03A;
-$sff_beak: #F58020;
-$sff_darkbrown: #560c06;
+$black: #000000;
+// $sff_softred: #ef4036;
+// $sff_red: #2F2C92;
+// $sff_red: #18236C;
+// $sff_brown: #7e3227; // eye of the chicken
+// $sff_gold: #fcb03a;
+// $sff_beak: #f58020;
+// $sff_darkbrown: #560c06;
 
-$primary: $sff_red;
-$link: $sff_gold;
-$warning: $sff_softred;
-$error: $sff_red;
+$primary: #18236C;
+$link: #FF0000;
+$warning: #FF0000;
+$error: #FF0000;
 
-$success: $sff_beak;
-$info: $sff_beak;
-$dark: $sff_darkbrown;
-$text: $sff_darkbrown;
+$success: #00FF00;
+$info: #FF00FF;
+$dark: $black;
+$text: $white;
 $navbar-item-hover-color: $white;
-$navbar-item-hover-background-color:saturate(darken($sff_red,10%),25%);
+$navbar-item-hover-background-color: saturate(darken($primary, 10%), 25%);
 $navbar-height: 7rem;
 
 @import "~bulma/bulma";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700");
 
-.navbar-item{
-    color: $white;
-    font-size: 1.5rem;
+.navbar-item {
+  color: $primary;
+  font-size: 1.5rem;
 }
 
-.hero .title{
-  color: $dark;
-  font-family: 'Montserrat', sans-serif;
-  font-size:4rem;
-  font-weight:400;
+.hero .title {
+  margin-top: 7rem;
+  color: $text;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  // text-shadow: 1px 1px $dark;
+  text-shadow: 4px 4px $dark;
 }
-.hero .subtitle{
-  color:$dark;
-  font-family: 'Montserrat', sans-serif;
+.hero .subtitle {
+  color: $text;
+  font-family: "Montserrat", sans-serif;
   font-size: 7rem;
-  font-weight: 100;
+  font-weight: 500;
+  text-shadow: 4px 4px $dark;
 }
 .hero p {
   font-size: 1.7rem;
+  // background-color: #444444;
+  background-color: rgba(40, 40, 40, 0.7)
 }
 
-.title,.subtitle {
-  color:$text;
-  font-family: 'Montserrat', sans-serif;
+.title,
+.subtitle {
+  color: $text;
+  font-family: "Montserrat", sans-serif;
 }
 
 .leaflet-container {
@@ -56,17 +65,17 @@ $navbar-height: 7rem;
 }
 
 .footer {
-  background:whitesmoke;
+  background: whitesmoke;
 }
 
-.chicken-sandwich {
-  transition: all 500ms;
-  transform: translateY(0%) rotate(0deg)
-}
-.chicken-sandwich:hover {
-  transition: all 500ms;
-  transform: translateY(-20%) rotate(-15deg)
-}
+// .chicken-sandwich {
+//   transition: all 500ms;
+//   transform: translateY(0%) rotate(0deg);
+// }
+// .chicken-sandwich:hover {
+//   transition: all 500ms;
+//   transform: translateY(-20%) rotate(-15deg);
+// }
 
 ///////////////////////
 .speaker-frame {
@@ -75,9 +84,30 @@ $navbar-height: 7rem;
   width: 150px;
   transform: rotate(45deg);
   overflow: hidden;
-  border: 5px solid darken($sff_darkbrown,20%);
-  background-color: invert($sff_beak);
+  border: 5px solid darken($black, 20%);
+  background-color: invert($primary);
 }
 .speaker-pic {
   transform: rotate(-45deg) scale(1.3);
+}
+
+.hero-body {
+  // background-image: url('capitol-at-dusk.jpg')
+  // background-color: #2F2C92;
+  background-image: url('/capitol-at-dusk.jpg');
+
+  /* Set a specific height */
+  height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+img.logo {
+  margin: 1rem;
+  height: 5rem;
+  width: 15rem;
 }

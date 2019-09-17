@@ -60,26 +60,27 @@ let paypal =
 
 //uncomment the navbar items as we add content for the pages
 let navBar =
-  Navbar.navbar [Navbar.Color IsPrimary; Navbar.Option.Props [Role "navigation"]] [ 
+  Navbar.navbar [Navbar.Option.Props [Role "navigation"]] [ 
+    Image.image [ ] [img [ Class "logo"; Src "capitol-logo.png"; ]]
     Navbar.Item.a  [ Navbar.Item.Props [Href "#home" ]] [ str "Home" ]
     Navbar.Item.a [ Navbar.Item.Props[Href "#speakers"]  ] [ str "Speakers" ]
-    Navbar.Item.a [ Navbar.Item.Props[Href "#schedule"]  ] [ str "Schedule" ]
-    Navbar.Item.a [ Navbar.Item.Props[Href "https://www.eventbrite.com/e/southern-fried-f-tickets-54591291021"]  ] [ str "Tickets" ]
-    Navbar.Item.a [ Navbar.Item.Props[Href "#venue"]  ] [str "Venue" ]
+    // Navbar.Item.a [ Navbar.Item.Props[Href "#schedule"]  ] [ str "Schedule" ]
+    // Navbar.Item.a [ Navbar.Item.Props[Href "https://www.eventbrite.com/e/southern-fried-f-tickets-54591291021"]  ] [ str "Tickets" ]
+    // Navbar.Item.a [ Navbar.Item.Props[Href "#venue"]  ] [str "Venue" ]
     Navbar.End.div [] [
       Navbar.Item.div [ ] [
-        Button.a [ Button.Props [Href "https://twitter.com/friedfsharp"]] [
+        Button.a [ Button.Props [Href "https://twitter.com/capitolfsharp"]] [
           i [ Class "fab fa-twitter"] [str " Share"]
         ]
       ]
-      Navbar.Item.div [ ] [
-        Button.a [Button.Props [Href "https://github.com/TriangleFSharp/SFFConference"]] [
-          i [ Class "fab fa-github"] [str " Contribute"]
-        ]
-      ]
-      Navbar.Item.div [ ] [
-        paypal
-      ]
+      // Navbar.Item.div [ ] [
+      //   Button.a [Button.Props [Href "https://github.com/sgoguen/CapitolFSharp"]] [
+      //     i [ Class "fab fa-github"] [str " Contribute"]
+      //   ]
+      // ]
+      // Navbar.Item.div [ ] [
+      //   paypal
+      // ]
 
     ]
   ]
@@ -92,12 +93,13 @@ let footer =
       ]
       Level.item [] [
         Image.image [ Image.Is32x32 ] [
-          img [Src "sandwich.png"; Class "chicken-sandwich"]
+          // img [Src "capitol-fs-logo-round.png"; Class "chicken-sandwich"]
+          img [Src "capitol-fs-logo-round.png";]
         ]
       ]
       Level.item [] [
         str "Questions?"
-        a [ Href "mailto:contact@southernfriedfsharp.com"
+        a [ Href "mailto:contact@capitolfsharp.org"
             Style [ Margin "5px" ] ] 
             [ str "Contact us"]
       ]
