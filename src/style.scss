@@ -111,3 +111,20 @@ img.logo {
   height: 5rem;
   width: 15rem;
 }
+
+div.call-for-speakers {
+
+  h2 {
+    color: $primary;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+  }
+
+  img {
+    height: 500px;
+  }
+
+  margin: 2rem;
+  text-align: center;
+}
