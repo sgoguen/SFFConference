@@ -10,3 +10,5 @@ output/
 .fake/
 temp/
 yarn-error.log 
+.fable 
+symbolCache.db

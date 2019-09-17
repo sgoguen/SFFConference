@@ -1,9 +1,9 @@
 {
-  "name": "SFFConference",
+  "name": "capitol-fsharp",
   "version": "0.0.1",
-  "description": "Southern Fried F#",
+  "description": "Capitol F#",
   "main": "index.js",
-  "repository": "https://github.com/TriangleFSharp/SFFConference",
+  "repository": "https://github.com/sgoguen/capitol-fsharp",
   "author": "",
   "license": "MIT",
   "private": true,
@@ -11,8 +11,10 @@
     "bulma": "^0.7.2",
     "bulma-pageloader": "^2.1.0",
     "font-awesome": "^4.7.0",
+    "leaflet": "^1.4.0",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-leaflet": "^2.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
@@ -23,8 +25,8 @@
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.1",
     "cssnano": "^4.1.7",
-    "fable-loader": "^2.1.0",
     "fable-compiler": "^2.1.1",
+    "fable-loader": "^2.1.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.5",
