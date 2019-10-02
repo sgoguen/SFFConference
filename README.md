@@ -1,5 +1,5 @@
 # SFFConference
-Conference page for Southern Fried F#
+Conference page for the Capitol F# Conference
 
 
 # Build

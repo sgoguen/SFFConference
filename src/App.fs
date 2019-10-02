@@ -63,7 +63,7 @@ let navBar =
   Navbar.navbar [Navbar.Option.Props [Role "navigation"]] [ 
     Image.image [ ] [img [ Class "logo"; Src "capitol-logo.png"; ]]
     Navbar.Item.a  [ Navbar.Item.Props [Href "#home" ]] [ str "Home" ]
-    Navbar.Item.a [ Navbar.Item.Props[Href "#speakers"]  ] [ str "Speakers" ]
+    // Navbar.Item.a [ Navbar.Item.Props[Href "#speakers"]  ] [ str "Speakers" ]
     // Navbar.Item.a [ Navbar.Item.Props[Href "#schedule"]  ] [ str "Schedule" ]
     // Navbar.Item.a [ Navbar.Item.Props[Href "https://www.eventbrite.com/e/southern-fried-f-tickets-54591291021"]  ] [ str "Tickets" ]
     // Navbar.Item.a [ Navbar.Item.Props[Href "#venue"]  ] [str "Venue" ]
