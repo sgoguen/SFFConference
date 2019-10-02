@@ -45,7 +45,7 @@ let venue =
         img [Src "https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg"]
       ]
       strong [] [
-        str "Southern Fried F#"
+        str "Capitol F#"
       ]
       str " is being held at " 
       a [ Href "https://www.redhat.com/en/about/videos/inside-red-hats-raleigh-headquarters"] [str "Red Hat global headquarters"]
